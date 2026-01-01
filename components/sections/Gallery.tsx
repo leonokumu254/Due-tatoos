@@ -1,5 +1,5 @@
 import React from 'react';
-import { Translation, GalleryItem } from '../../types';
+import { Translation} from '../../types';
 import { GALLERY_IMAGES } from '../../constants';
 import './Gallery.css';
 

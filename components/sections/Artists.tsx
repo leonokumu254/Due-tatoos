@@ -1,5 +1,5 @@
 import React from 'react';
-import { Translation, Artist } from '../../types';
+import { Translation } from '../../types';
 import { ARTISTS } from '../../constants';
 import { Instagram } from 'lucide-react';
 import './Artists.css';
