@@ -1,0 +1,169 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  overflow: hidden;
+  background-color: var(--rich-black);
+}
+
+.hero-bg-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(30, 30, 30, 0.3), transparent);
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  order: 2;
+  animation: fadeUp 1s ease-out;
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    order: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-accent-line {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--muted-bronze);
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--mist-white);
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  font-weight: 300;
+  max-width: 28rem;
+}
+
+.hero-cta-wrapper {
+  padding-top: 1rem;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  order: 1;
+  height: 50vh;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .hero-image-wrapper {
+    order: 2;
+    height: 80vh;
+  }
+}
+
+.hero-image-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(197, 160, 89, 0.1);
+  z-index: 0;
+  transform: translate(1rem, 1rem);
+  transition: transform 0.5s;
+  clip-path: polygon(20% 0%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.hero-image-wrapper:hover .hero-image-backdrop {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background-image: url('https://picsum.photos/id/103/800/1200');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: all 0.7s ease-in-out;
+  clip-path: polygon(20% 0%, 100% 0, 100% 85%, 0% 100%);
+}
+
+.hero-image-wrapper:hover .hero-image {
+  filter: grayscale(0%);
+}
+
+.hero-image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s;
+}
+
+.hero-image-wrapper:hover .hero-image-overlay {
+  background-color: transparent;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  animation: bounce 2s infinite;
+}
+
+@media (min-width: 768px) {
+  .scroll-indicator {
+    display: block;
+  }
+}
+
+.scroll-line {
+  width: 2px;
+  height: 4rem;
+  background: linear-gradient(to bottom, transparent, var(--muted-bronze), transparent);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}

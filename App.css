@@ -1,0 +1,14 @@
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--rich-black);
+  color: var(--mist-white);
+}
+
+::selection {
+  background-color: var(--muted-bronze);
+  color: var(--rich-black);
+}
+
+main {
+  display: block;
+}
