@@ -1,5 +1,6 @@
 import { Language, Translation, Artist, GalleryItem } from './types';
 
+
 export const TRANSLATIONS: Record<Language, Translation> = {
   [Language.EN]: {
     nav: {
@@ -119,10 +120,10 @@ export const ARTISTS: Artist[] = [
 ];
 
 export const GALLERY_IMAGES: GalleryItem[] = [
-  { id: 1, title: 'Dragon Back Piece', imageUrl: 'https://picsum.photos/id/1015/600/600' },
-  { id: 2, title: 'Floral Sleeve', imageUrl: 'https://picsum.photos/id/1016/600/800' },
-  { id: 3, title: 'Geometric Chest', imageUrl: 'https://picsum.photos/id/1025/600/600' },
-  { id: 4, title: 'Traditional Tiger', imageUrl: 'https://picsum.photos/id/1003/600/800' },
-  { id: 5, title: 'Minimalist Line', imageUrl: 'https://picsum.photos/id/1024/600/600' },
-  { id: 6, title: 'Portrait', imageUrl: 'https://picsum.photos/id/1062/600/800' },
+  { id: 1, title: 'Dragon Back Piece', imageUrl:'/images/dragon.jpg'},
+  { id: 2, title: 'Floral Sleeve', imageUrl: '/images/floral.jpg' },
+  { id: 3, title: 'Geometric Chest', imageUrl: '/images/geometric.jpg' },
+  { id: 4, title: 'Traditional Tiger', imageUrl: '/images/tiger.jpg' },
+  { id: 5, title: 'Minimalist Line', imageUrl: '/images/minimalist.jpg' },
+  { id: 6, title: 'Portrait', imageUrl: '/images/potrait.jpg'},
 ];

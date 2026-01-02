@@ -36,12 +36,12 @@ export const Hero: React.FC<HeroProps> = ({ t }) => {
         </div>
 
         {/* Hero Image with Clip Path */}
-        <div className="hero-image-wrapper">
+        {/* <div className="hero-image-wrapper">
            <div className="hero-image-backdrop"></div>
            <div className="hero-image">
             <div className="hero-image-overlay"></div>
            </div>
-        </div>
+        </div> */}
       </div>
       
       {/* Scroll indicator */}

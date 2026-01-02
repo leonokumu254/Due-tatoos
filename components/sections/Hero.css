@@ -6,6 +6,11 @@
   padding-top: 5rem;
   overflow: hidden;
   background-color: var(--rich-black);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.8) ),url(../images/smiley-tatoo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-bg-accent {
@@ -87,21 +92,21 @@
   padding-top: 1rem;
 }
 
-.hero-image-wrapper {
+/* .hero-image-wrapper {
   position: relative;
   order: 1;
   height: 50vh;
   width: 100%;
-}
+} */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .hero-image-wrapper {
     order: 2;
     height: 80vh;
   }
-}
+} */
 
-.hero-image-backdrop {
+/* .hero-image-backdrop {
   position: absolute;
   inset: 0;
   background-color: rgba(197, 160, 89, 0.1);
@@ -109,38 +114,38 @@
   transform: translate(1rem, 1rem);
   transition: transform 0.5s;
   clip-path: polygon(20% 0%, 100% 0, 100% 85%, 0% 100%);
-}
+} */
 
-.hero-image-wrapper:hover .hero-image-backdrop {
+/* .hero-image-wrapper:hover .hero-image-backdrop {
   transform: translate(0.5rem, 0.5rem);
-}
+} */
 
-.hero-image {
+/* .hero-image {
   position: absolute;
   inset: 0;
   z-index: 10;
-  background-image: url('https://picsum.photos/id/103/800/1200');
+  background-image: url('../assets/hero.jpg');
   background-size: cover;
   background-position: center;
-  filter: grayscale(100%);
+  filter: grayscale(70%);
   transition: all 0.7s ease-in-out;
   clip-path: polygon(20% 0%, 100% 0, 100% 85%, 0% 100%);
 }
 
 .hero-image-wrapper:hover .hero-image {
-  filter: grayscale(0%);
+  filter: grayscale(10%);
 }
 
 .hero-image-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s;
 }
 
 .hero-image-wrapper:hover .hero-image-overlay {
   background-color: transparent;
-}
+} */
 
 .scroll-indicator {
   position: absolute;
