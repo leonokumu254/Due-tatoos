@@ -7,13 +7,14 @@ interface HeroProps {
   t: Translation['hero'];
 }
 
+
 export const Hero: React.FC<HeroProps> = ({ t }) => {
   const scrollToBooking = () => {
     document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section id="hero" className="hero-section">
+    <section id="hero" className="hero-section" data-aos="fade-up">
       {/* Background decoration */}
       <div className="hero-bg-accent" />
       
@@ -22,11 +23,11 @@ export const Hero: React.FC<HeroProps> = ({ t }) => {
         {/* Text Content */}
         <div className="hero-content">
           <div className="hero-accent-line" />
-          <h1 className="hero-title">
+          <h1 className="hero-title" >
             {t.title.split(' ').map((word, i) => (
               <span key={i}>{word}</span>
             ))}
-          </h1>
+          </h1 >
           <p className="hero-subtitle">
             {t.subtitle}
           </p>
@@ -35,13 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ t }) => {
           </div>
         </div>
 
-        {/* Hero Image with Clip Path */}
-        {/* <div className="hero-image-wrapper">
-           <div className="hero-image-backdrop"></div>
-           <div className="hero-image">
-            <div className="hero-image-overlay"></div>
-           </div>
-        </div> */}
+       
       </div>
       
       {/* Scroll indicator */}

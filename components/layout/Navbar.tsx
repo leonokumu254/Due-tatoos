@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage, t }) =
           className="logo"
           onClick={() => scrollToSection('hero')}
         >
-          Due<span className="text-bronze">.</span>Tattoos
+          <img src="/images/logo.png" alt="" id='logo'  />
         </div>
 
         {/* Desktop Nav */}

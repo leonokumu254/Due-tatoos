@@ -103,19 +103,19 @@ export const ARTISTS: Artist[] = [
     id: 1,
     name: 'Alex "The Needle" Doe',
     role: 'Realism Specialist',
-    imageUrl: 'https://picsum.photos/id/338/400/500',
+    imageUrl: '/images/Artist1.jpg',
   },
   {
     id: 2,
     name: 'Sarah "Viper" Smith',
     role: 'Neo-Traditional',
-    imageUrl: 'https://picsum.photos/id/64/400/500',
+    imageUrl: '/images/Artist3.jpg',
   },
   {
     id: 3,
     name: 'Marcus "Ink" Johnson',
     role: 'Blackwork Expert',
-    imageUrl: 'https://picsum.photos/id/91/400/500',
+    imageUrl: '/images/Artist2.jpg',
   },
 ];
 
@@ -126,4 +126,10 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   { id: 4, title: 'Traditional Tiger', imageUrl: '/images/tiger.jpg' },
   { id: 5, title: 'Minimalist Line', imageUrl: '/images/minimalist.jpg' },
   { id: 6, title: 'Portrait', imageUrl: '/images/potrait.jpg'},
+  { id: 7, title: 'Piercing', imageUrl: '/images/piercing.jpg'},
+  { id: 7, title: 'Beauty', imageUrl: '/images/woman.jpg'},
+  { id: 7, title: 'Tatoo', imageUrl: '/images/tatoo.jpg'},
+  { id: 7, title: 'Artist in action', imageUrl: '/images/studio.jpg'},
+  { id: 7, title: 'Back', imageUrl: '/images/back tatoo.jpg'},
+  { id: 7, title: 'Beauty', imageUrl: '/images/smiley-tatoo.jpg'},
 ];

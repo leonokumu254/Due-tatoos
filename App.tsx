@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
 import { Gallery } from './components/sections/Gallery';
@@ -10,12 +10,16 @@ import { Language } from './types';
 import { TRANSLATIONS } from './constants';
 import './App.css';
 
+
+
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>(Language.EN);
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === Language.EN ? Language.FR : Language.EN);
-  };
+    
+  }
+  
 
   const t = TRANSLATIONS[language];
 

@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -25,13 +28,18 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--mist-white);
   cursor: pointer;
-}
+  transition: 0.3s ease;
+  
+ }
+ #logo{
+  max-width: 70px;
+
+  border-radius: 10px;
+ }
+ .logo:hover{
+  transform: scale(1.2);
+ }
 
 .nav-links-desktop {
   display: none;
