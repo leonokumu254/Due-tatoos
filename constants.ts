@@ -109,7 +109,7 @@ export const ARTISTS: Artist[] = [
     id: 2,
     name: 'Sarah "Viper" Smith',
     role: 'Neo-Traditional',
-    imageUrl: '/images/Artist3.jpg',
+    imageUrl: '/images/Artist3.webp',
   },
   {
     id: 3,
@@ -127,9 +127,9 @@ export const GALLERY_IMAGES: GalleryItem[] = [
   { id: 5, title: 'Minimalist Line', imageUrl: '/images/minimalist.jpg' },
   { id: 6, title: 'Portrait', imageUrl: '/images/potrait.jpg'},
   { id: 7, title: 'Piercing', imageUrl: '/images/piercing.jpg'},
-  { id: 7, title: 'Beauty', imageUrl: '/images/woman.jpg'},
-  { id: 7, title: 'Tatoo', imageUrl: '/images/tatoo.jpg'},
+  { id: 7, title: 'Beauty', imageUrl: '/images/woman.webp'},
+  { id: 7, title: 'Tatoo', imageUrl: '/images/tatoo.webp'},
   { id: 7, title: 'Artist in action', imageUrl: '/images/studio.jpg'},
-  { id: 7, title: 'Back', imageUrl: '/images/back tatoo.jpg'},
-  { id: 7, title: 'Beauty', imageUrl: '/images/smiley-tatoo.jpg'},
+  { id: 7, title: 'Back', imageUrl: '/images/back tatoo.webp'},
+  { id: 7, title: 'Beauty', imageUrl: '/images/smiley-tatoo.webp'},
 ];

@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ t }) => {
   };
 
   return (
-    <section id="hero" className="hero-section" data-aos="fade-up">
+    <section id="hero" className="hero-section" data-aos="fade-up" >
       {/* Background decoration */}
       <div className="hero-bg-accent" />
       
