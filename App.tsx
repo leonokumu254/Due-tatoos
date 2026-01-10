@@ -5,6 +5,7 @@ import { Gallery } from './components/sections/Gallery';
 import { Artists } from './components/sections/Artists';
 import { Booking } from './components/sections/Booking';
 import { Contact } from './components/sections/Contact';
+import { Pricing } from './components/sections/Pricing';
 import { Footer } from './components/layout/Footer';
 import { Language } from './types';
 import { TRANSLATIONS } from './constants';
@@ -35,6 +36,7 @@ const App: React.FC = () => {
         <Hero t={t.hero} />
         <Gallery t={t.gallery} />
         <Artists t={t.artists} />
+        <Pricing />
         <Booking t={t.booking} />
         <Contact t={t.contact} />
       </main>

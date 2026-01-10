@@ -27,7 +27,7 @@ export const TRANSLATIONS: Record<Language, Translation> = {
     contact: {
       title: 'Find Us',
       subtitle: 'Visit our studio',
-      address: '123 Ink Street, Creative District, City',
+      address: '15 Rue Oberkampf 75011 Paris France',
       phone: '+1 (555) 123-4567',
       email: 'info@duetattoos.com',
       mapPlaceholder: 'Map Visualization',
@@ -74,7 +74,7 @@ export const TRANSLATIONS: Record<Language, Translation> = {
     contact: {
       title: 'Nous Trouver',
       subtitle: 'Visitez notre studio',
-      address: '123 Rue de l\'Encre, Quartier Créatif, Ville',
+      address: '15 Rue Oberkampf Paris, 75011 France',
       phone: '+1 (555) 123-4567',
       email: 'info@duetattoos.com',
       mapPlaceholder: 'Visualisation de la Carte',

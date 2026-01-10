@@ -68,13 +68,17 @@ export const Contact: React.FC<ContactProps> = ({ t }) => {
 
           {/* Map Placeholder */}
           <div className="contact-map-wrapper">
-            <div className="map-bg"></div>
-            <div className="map-content">
-              <div className="map-placeholder-box">
-                <MapPin className="map-icon" size={32} />
-                <span className="map-text">{t.mapPlaceholder}</span>
-              </div>
-            </div>
+           <div className="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d269.12903786085326!2d2.375102111933269!3d48.864905099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dfb251857a3%3A0xdba5ea61d5e9fc63!2zQUREVUxUIFRyw6lsYXrDqQ!5e1!3m2!1sen!2ske!4v1768027732970!5m2!1sen!2ske" 
+    width="100%" 
+    height="450" 
+    style={{ border: 0 }} 
+    allowFullScreen 
+    loading="lazy" 
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
             
             {/* Visual corner accents */}
             <div className="corner-accent-tl"></div>
